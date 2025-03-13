@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    color: #d63384;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff66b2;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.gallery {
+    margin: 20px;
+}
+
+.images img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.love-message {
+    background-color: #ffd9e6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.game, .love-test {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffb3d9;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff1a66;
+}
+
+

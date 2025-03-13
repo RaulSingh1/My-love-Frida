@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Kjærlighet</title>
+    <link rel="stylesheet" href="love1.css">
+    <link rel="icon" href="lovebilde2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="heart_hunt.css">
+    <script defer src="main.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Til Min Elskling ❤️</h1>
+    </header>
+
+    <section class="gallery">
+        <h2>Våre vakreste minner</h2>
+        <div class="images">
+            <img src="IMG_7429.JPG" alt="Bilde av oss">
+            <img src="IMG_7431.jpg" alt="Bilde av oss">
+            <img src="JPEG-bilde-4648-A2EF-B0-0.jpeg" alt="Bilde av oss">
+            <img src="IMG_7435.jpg" alt="Bilde av oss">
+            <img src="JPEG-bilde-426D-87A2-40-0.jpeg" alt="Bilde av oss">
+            <img src="lovesov.jpg" alt="Bilde av oss">
+
+        </div>
+    </section>
+
+    <section class="love-message">
+        <h2>Hvor mye jeg elsker deg</h2>
+        <p>Fra første gang jeg møtte deg, visste jeg at du var spesiell. Hver dag med deg er en gave, og jeg kan ikke forestille meg livet uten deg. ❤️</p>
+    </section>
+
+    <section class="game">
+        <h2>Kjærlighetsspill</h2>
+        <p>Trykk på hjertet for å få en søt melding!</p>
+        <button id="loveButton">💖 Trykk her 💖</button>
+        <p id="loveMessage"></p>
+    </section>
+
+    <section class="love-test">
+        <h2>Elsker du meg?</h2>
+        <p>Trykk "Ja" for å vise hvor mye! ❤️</p>
+        <button id="yesButton">Ja</button>
+        <button id="noButton">Nei</button>
+    </section>
+
+    <script>
+       
+        const messages = [
+            "Du er min Engel",
+            "Jeg elsker deg mer enn ord kan si! ❤️",
+            "Du gjør livet mitt perfekt!",
+            "Hver dag med deg er en drøm som blir sann! 💕"
+        ];
+
+        document.getElementById("loveButton").addEventListener("click", function() {
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("loveMessage").textContent = randomMessage;
+        });
+
+        let yesButton = document.getElementById("yesButton");
+        let noButton = document.getElementById("noButton");
+        let size = 16; 
+
+        yesButton.addEventListener("click", function() {
+            size += 10; //
+            yesButton.style.fontSize = size + "px";
+        });
+
+        noButton.addEventListener("click", function() {
+            noButton.textContent = "Feil svar! Prøv igjen 😆";
+        });
+    </script>
+
+</head>
+<body>
+    <div class="game-container">
+        <h1>💖 Hjertejakten 💖</h1>
+        <p>Finn så mange hjerter du kan før tiden går ut!</p>
+        <p id="score">Hjerter funnet: 0</p>
+        <p id="timer">Tid igjen: 30 sek</p>
+        <button onclick="startGame()">Start spillet 💕</button>
+        <div id="game-area"></div>
+    </div>
+
+    <script src="heart_hunt.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
